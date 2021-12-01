@@ -6,32 +6,40 @@ import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
 
 @XStreamAlias("Currency")
-public class Currency {
+public class Currency extends Bank{
 
     @XStreamAlias("Id")
     @XStreamAsAttribute
-    private int Id;
+    private String Id;
+
     @XStreamAlias("NumCode")
     private String NumCode;
+
     @XStreamAlias("CharCode")
     private String CharCode;
+
     @XStreamAlias("Scale")
     private String Scale;
+
     @XStreamAlias("Name")
     private String Name;
+
     @XStreamAlias("RateBuy")
-    private String RateBuy;
+    private double RateBuy;
+
     @XStreamAlias("RateSell")
-    private String RateSell;
+    private double RateSell;
+
     @XStreamAlias("CityId")
     private String CityId;
+
     @XStreamAlias("BankId")
     private String BankId;
 
     public Currency() {
     }
 
-    public Currency(String numCode, String charCode, String scale, String name, String rateBuy, String rateSell, String cityId, String bankId) {
+    public Currency(String numCode, String charCode, String scale, String name, double rateBuy, double rateSell, String cityId, String bankId) {
         NumCode = numCode;
         CharCode = charCode;
         Scale = scale;
@@ -40,6 +48,14 @@ public class Currency {
         RateSell = rateSell;
         CityId = cityId;
         BankId = bankId;
+    }
+
+    public String getId() {
+        return Id;
+    }
+
+    public void setId(String id) {
+        Id = id;
     }
 
     public String getNumCode() {
@@ -74,19 +90,19 @@ public class Currency {
         Name = name;
     }
 
-    public String getRateBuy() {
+    public double getRateBuy() {
         return RateBuy;
     }
 
-    public void setRateBuy(String rateBuy) {
+    public void setRateBuy(double rateBuy) {
         RateBuy = rateBuy;
     }
 
-    public String getRateSell() {
+    public double getRateSell() {
         return RateSell;
     }
 
-    public void setRateSell(String rateSell) {
+    public void setRateSell(double rateSell) {
         RateSell = rateSell;
     }
 
@@ -105,4 +121,13 @@ public class Currency {
     public void setBankId(String bankId) {
         BankId = bankId;
     }
+
+    public void show(){
+        System.out.println(this.getCharCode() + " " + this.getRateBuy() + " " + this.getBankId());
+    }
+
+    public void showBank(String s){
+
+    }
+
 }

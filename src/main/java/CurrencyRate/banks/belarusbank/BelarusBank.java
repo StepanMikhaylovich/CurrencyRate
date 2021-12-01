@@ -4,100 +4,100 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class BelarusBank {
     @JsonProperty("USD_in")
-    private String USD_in;
+    private double USD_in;
 
     @JsonProperty("USD_out")
-    private String USD_out;
+    private double USD_out;
 
     @JsonProperty("EUR_in")
-    private String EUR_in;
+    private double EUR_in;
 
     @JsonProperty("EUR_out")
-    private String EUR_out;
+    private double EUR_out;
 
     @JsonProperty("RUB_in")
-    private String RUB_in;
+    private double RUB_in;
 
     @JsonProperty("RUB_out")
-    private String RUB_out;
+    private double RUB_out;
 
     @JsonProperty("GBP_in")
-    private String GBP_in;
+    private double GBP_in;
 
     @JsonProperty("GBP_out")
-    private String GBP_out;
+    private double GBP_out;
 
     @JsonProperty("CAD_in")
-    private String CAD_in;
+    private double CAD_in;
 
     @JsonProperty("CAD_out")
-    private String CAD_out;
+    private double CAD_out;
 
     @JsonProperty("PLN_in")
-    private String PLN_in;
+    private double PLN_in;
 
     @JsonProperty("PLN_out")
-    private String PLN_out;
+    private double PLN_out;
 
     @JsonProperty("UAH_in")
-    private String UAH_in;
+    private double UAH_in;
 
     @JsonProperty("UAH_out")
-    private String UAH_out;
+    private double UAH_out;
 
     @JsonProperty("SEK_in")
-    private String SEK_in;
+    private double SEK_in;
 
     @JsonProperty("SEK_out")
-    private String SEK_out;
+    private double SEK_out;
 
     @JsonProperty("CHF_in")
-    private String CHF_in;
+    private double CHF_in;
 
     @JsonProperty("CHF_out")
-    private String CHF_out;
+    private double CHF_out;
 
     @JsonProperty("USD_EUR_in")
-    private String USD_EUR_in;
+    private double USD_EUR_in;
 
     @JsonProperty("USD_EUR_out")
-    private String USD_EUR_out;
+    private double USD_EUR_out;
 
     @JsonProperty("USD_RUB_in")
-    private String USD_RUB_in;
+    private double USD_RUB_in;
 
     @JsonProperty("USD_RUB_out")
-    private String USD_RUB_out;
+    private double USD_RUB_out;
 
     @JsonProperty("RUB_EUR_in")
-    private String RUB_EUR_in;
+    private double RUB_EUR_in;
 
     @JsonProperty("RUB_EUR_out")
-    private String RUB_EUR_out;
+    private double RUB_EUR_out;
 
     @JsonProperty("JPY_in")
-    private String JPY_in;
+    private double JPY_in;
 
     @JsonProperty("JPY_out")
-    private String JPY_out;
+    private double JPY_out;
 
     @JsonProperty("CNY_in")
-    private String CNY_in;
+    private double CNY_in;
 
     @JsonProperty("CNY_out")
-    private String CNY_out;
+    private double CNY_out;
 
     @JsonProperty("CZK_in")
-    private String CZK_in;
+    private double CZK_in;
 
     @JsonProperty("CZK_out")
-    private String CZK_out;
+    private double CZK_out;
 
     @JsonProperty("NOK_in")
-    private String NOK_in;
+    private double NOK_in;
 
     @JsonProperty("NOK_out")
-    private String NOK_out;
+    private double NOK_out;
 
     @JsonProperty("filial_id")
     private String filial_id;
@@ -129,7 +129,7 @@ public class BelarusBank {
     public BelarusBank() {
     }
 
-    public BelarusBank(String USD_in, String USD_out, String EUR_in, String EUR_out, String RUB_in, String RUB_out, String GBP_in, String GBP_out, String CAD_in, String CAD_out, String PLN_in, String PLN_out, String UAH_in, String UAH_out, String SEK_in, String SEK_out, String CHF_in, String CHF_out, String USD_EUR_in, String USD_EUR_out, String USD_RUB_in, String USD_RUB_out, String RUB_EUR_in, String RUB_EUR_out, String JPY_in, String JPY_out, String CNY_in, String CNY_out, String CZK_in, String CZK_out, String NOK_in, String NOK_out, String filial_id, String sap_id, String info_worktime, String street_type, String street, String filials_text, String home_number, String name, String name_type) {
+    public BelarusBank(double USD_in, double USD_out, double EUR_in, double EUR_out, double RUB_in, double RUB_out, double GBP_in, double GBP_out, double CAD_in, double CAD_out, double PLN_in, double PLN_out, double UAH_in, double UAH_out, double SEK_in, double SEK_out, double CHF_in, double CHF_out, double USD_EUR_in, double USD_EUR_out, double USD_RUB_in, double USD_RUB_out, double RUB_EUR_in, double RUB_EUR_out, double JPY_in, double JPY_out, double CNY_in, double CNY_out, double CZK_in, double CZK_out, double NOK_in, double NOK_out, String filial_id, String sap_id, String info_worktime, String street_type, String street, String filials_text, String home_number, String name, String name_type) {
         this.USD_in = USD_in;
         this.USD_out = USD_out;
         this.EUR_in = EUR_in;
@@ -174,7 +174,7 @@ public class BelarusBank {
     }
 
     public double getUSD_EUR_in() {
-        return Double.parseDouble(this.USD_EUR_in);
+        return this.USD_EUR_in;
     }
 
     @Override

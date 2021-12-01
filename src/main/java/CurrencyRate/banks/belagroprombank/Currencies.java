@@ -5,28 +5,31 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-import java.util.*;
+import java.util.List;
 
 @XStreamAlias("DailyExRates")
-public class BelAgroPromBank {
+public class Currencies extends Bank {
 
     @XStreamAlias("Date")
     @XStreamAsAttribute
     String Date;
 
     @XStreamImplicit(itemFieldName = "Currency")
-    private List<Currency> currency = new ArrayList<>();
+    private List<Currency> currency;
 
-    public BelAgroPromBank() {
+    public Currencies() {
     }
 
-    public BelAgroPromBank(List<Currency> currency) {
+    public Currencies(List<Currency> currency) {
         this.currency = currency;
     }
 
-    public void showCurrency(){
-        for (Currency currency : currency){
-            System.out.println(currency.getRateBuy());
-        }
+    public String getDate() {
+        return Date;
     }
+
+    public List<Currency> getCurrency() {
+        return currency;
+    }
+
 }
