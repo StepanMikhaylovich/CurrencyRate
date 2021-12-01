@@ -121,13 +121,4 @@ public class Currency extends Bank{
     public void setBankId(String bankId) {
         BankId = bankId;
     }
-
-    public void show(){
-        System.out.println(this.getCharCode() + " " + this.getRateBuy() + " " + this.getBankId());
-    }
-
-    public void showBank(String s){
-
-    }
-
 }
